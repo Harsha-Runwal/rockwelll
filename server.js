@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname,'public')));
 
 app.get('/hello', function (req, res) {
   console.log("CAlling rest api");
-  var person={firstName:'Ravi',lastName:'Tambade',age:43};
+  var person={firstName:'Harsha',lastName:'Harsha'};
   res.send(person);
 });
 
