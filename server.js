@@ -18,8 +18,8 @@ app.get('/hello', function (req, res) {
   res.send(person);
 });
 
- app.listen(9459, '15.207.113.73', () => {
-    console.log('Example app is listening on http://15.207.113.73:9459');
+ app.listen(9459, '0.0.0.0', () => {
+    console.log('Example app is listening on http://0.0.0.0:9459');
 });
 // var server = app.listen(9459, function () {
 //   var host = server.address().address
