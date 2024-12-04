@@ -18,11 +18,13 @@ app.get('/hello', function (req, res) {
   res.send(person);
 });
 
- app.listen(8081, '0.0.0.0', () => {
-    console.log('Example app listening on http://localhost:8081');
-});
-// var server = app.listen(8081, function () {
-//   var host = server.address().address
-//   var port = server.address().port
-//   console.log("Example app listening at http://localhost:8081", host, port)
-// })
+//  app.listen(8081, '0.0.0.0', () => {
+//     console.log('Example app listening on http://localhost:8081');
+// });
+var server = app.listen(8081, function () {
+  var host = server.address().address
+  var port = server.address().port
+  console.log("host = ",host)
+ console.log("port = ",port)
+  console.log("Example app is listening at http://localhost:8081", host, port)
+})
